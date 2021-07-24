@@ -1,17 +1,18 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
     private Rigidbody m_Rigidbody;
 
-    void Start()
+    private void Awake()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
     }
     
+    private void Start()
+    {
+        MainManager.Instance.Ball = m_Rigidbody;
+    }
     private void OnCollisionExit(Collision other)
     {
         var velocity = m_Rigidbody.velocity;
