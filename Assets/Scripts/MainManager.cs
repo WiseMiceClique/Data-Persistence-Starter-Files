@@ -88,12 +88,12 @@ public class MainManager : MonoBehaviour
         gameSaver.SaveScore(playerName, bestPoints);
     }
 
-    public int GetCurrentScore()
+    public int GetCurrentScore() //ENCAPSULATION
     {
         return m_Points;
     }
 
-    public int GetCurrentHighScore()
+    public int GetCurrentHighScore() //ENCAPSULATION
     {
         return bestPoints;
     }

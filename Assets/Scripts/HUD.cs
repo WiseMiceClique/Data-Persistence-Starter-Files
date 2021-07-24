@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HUD : MonoBehaviour
+public class HUD : MonoBehaviour //INHERITANCE
 {
     [SerializeField] private Text ScoreText;
     [SerializeField] private Text HighScoreText;

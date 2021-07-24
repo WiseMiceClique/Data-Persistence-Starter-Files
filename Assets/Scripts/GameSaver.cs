@@ -11,7 +11,7 @@ public class GameSaver : MonoBehaviour
         //File.Delete(path);
     }
 
-    private void Start()
+    private void Start() //POLYMORPHISM ;)
     {
         MainManager.Instance.gameSaver = this;
         path = Application.persistentDataPath + "/savefile.json";
@@ -41,7 +41,7 @@ public class GameSaver : MonoBehaviour
         public string name;
         public int score;
 
-        public SaveData(string playerName, int playerScore)
+        public SaveData(string playerName, int playerScore)// ABSTRACTION
         {
             name = playerName;
             score = playerScore;
